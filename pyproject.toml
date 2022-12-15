@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "python-pytest-training001"
+version = "0.1.0"
+description = ""
+authors = ["yugo uchiida <y.uchiida@nirneege.com>"]
+readme = "README.md"
+packages = [{include = "python_pytest_training001"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
