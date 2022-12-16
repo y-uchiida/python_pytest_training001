@@ -9,12 +9,19 @@ packages = [{include = "python_pytest_training001"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 
-
 [tool.poetry.group.dev.dependencies]
 black = "^22.12.0"
 flake8 = "^6.0.0"
 mypy = "^0.991"
 pytest = "^7.2.0"
+
+[tool.pytest.ini_options]
+markers = [
+	"fooGroup",
+	"fooClassGroup",
+	"barGroup",
+	"barClassGroup",
+]
 
 [build-system]
 requires = ["poetry-core"]
